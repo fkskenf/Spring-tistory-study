@@ -1,4 +1,4 @@
-# spring-init-setting-study-blog
+# spring-init-setting-study-tistory
 
 1. maven 프로젝트 생성 : https://hyeounstory.tistory.com/77
 2. eclipse > 깃 올리기 : https://hyeounstory.tistory.com/78

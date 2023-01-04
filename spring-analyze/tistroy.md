@@ -44,3 +44,9 @@ https://hyeounstory.tistory.com/244
 
 # branch 생성 및 resource 적용
 https://hyeounstory.tistory.com/243
+
+# context-*.xml 분석
+1. context-datasource.xml : https://hyeounstory.tistory.com/126
+2. context-mapper.xml : https://hyeounstory.tistory.com/127
+3. context-scheduler.xml : https://hyeounstory.tistory.com/128
+4. context-transaction.xml : https://hyeounstory.tistory.com/129

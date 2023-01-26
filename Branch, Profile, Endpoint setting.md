@@ -1,7 +1,7 @@
-# branch
+# Branch
 1. git 또는 sourceTree를 통해 branch 추가
 
-# profile
+# Profile
 1. pom.xml에 profile 추가
 2. resources하위에 해당 profile 파일 생성
 > 1. DB 접속정보 변경

@@ -3,7 +3,7 @@
 2. 블록/ 논 블록
 
 # 비동기 적용 테스트
-1. AsyncConfig.java
+## 1. AsyncConfig.java
 ```java
 @EnableAsync
 @Configuration
@@ -23,7 +23,7 @@ public class AsyncConfig {
 ```
 <br>
 
-2. serviceImpl1.java (결과값이 있는경우)
+## 2. serviceImpl1.java (결과값이 있는경우)
 ```java
 CompletableFuture<LuluResult> futureAgeResult = Service.asyncService(q); //데이터 없을 경우 204, 있을 경우 200 그대로 반환하기
 while (!(futureAgeResult.isDone()) {
@@ -32,11 +32,13 @@ while (!(futureAgeResult.isDone()) {
 
 Result result = futureAgeResult.get(); // 해당 부분 에러
 ```
-- LuluResult pmsresult2 = futureAgeResult.get(); // 해당 부분 에러
+<br>
+
+- Result result = futureAgeResult.get(); // 해당 부분 에러
 - 좀 더 공부해보자 : 스레드 이슈인듯
 <br>
 
-3. serviceImpl2.java
+## 3. serviceImpl2.java
 ```java
 /*
  * 비동기
@@ -50,6 +52,4 @@ public CompletableFuture asyncService(HashMap<String, Object> param) {
 
 	return CompletableFuture.supplyAsync(() -> CompletableFuture.completedFuture(result)); // 비동기에러 예외처리
 }
-
-	/*
 ```

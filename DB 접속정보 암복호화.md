@@ -48,4 +48,4 @@ jdbc.finance.username=ENC(GwuTdw6O8ntJvVHKTwp+1VGkQNPm2rvU)
 jdbc.finance.password=ENC(GEmkjH+IKYKfo0TRtl/6oUPjqQQm7mrb)
 ```
 
-3. context-datasource.xml에 DB 접속 빈 설정
+4. context-datasource.xml에 DB 접속 빈 설정

@@ -40,7 +40,7 @@ public class junitTest {
 # Spring에서 Junit을 활용한 TDD 방법론 
 1. dependency 추가
 ```xml
-dependencyManagement>
+<dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.junit</groupId>

@@ -1,5 +1,5 @@
 
-# Intellij에서 Junit 사용하는 방법
+# Intellij에서 Junit 간단히 사용하는 방법
 
 1. Junit dependency 추가
 ```xml
@@ -34,3 +34,48 @@ public class junitTest {
 
 5. 실행
 > 1. 마우스 우클릭 > Run 'test()' 클릭 
+
+<br>
+
+# Spring에서 Junit을 활용한 TDD 방법론 
+1. dependency 추가
+```xml
+dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-bom</artifactId>
+            <version>5.8.2</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+<dependencies>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>3.22.0</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+```
+
+또는
+
+```xml
+<dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter</artifactId>
+  <version>5.8.2</version>
+  <scope>test</scope>
+</dependency>
+```
+

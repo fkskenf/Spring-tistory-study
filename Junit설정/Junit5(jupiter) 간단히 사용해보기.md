@@ -1,7 +1,7 @@
 
-# Intellij에서 Junit 사용하는 방법 (Spring)
+# Intellij에서 Junit5 사용하는 방법 (Spring)
 
-1. Junit dependency 추가
+1. Junit dependency 추가 (Junit5의 jupiter 사용)
 ```xml
 <dependency>
   <groupId>org.junit.jupiter</groupId>
@@ -42,9 +42,8 @@
 ```
 
 2. test 폴더 생성 (src.test.java.prj.class)
-> 1. src 하위에 Directory 생성 : test.java
-> 2. java 하위에 package 생성 : test.java.prj 
-> 3. prj 하위에 class 생성
+> 경로 : test > java > prj > test.class
+
 
 3. test Class 작성
 ```java
@@ -79,5 +78,5 @@ public class junitTest {
 > 1. 마우스 우클릭 > Run 'test()' 클릭 
 
 6. 이슈
-> 1. intellij에서 Maven프로젝트에 @Display가 적용이 안된다면, import org.junit.jupiter.api.Test; 맞는지 확인 
+> 1. intellij에서 Maven프로젝트에 @Display가 적용이 안된다면, import org.junit.jupiter.api.Test;, import org.junit.jupiter.api.DisplayName; 맞는지 확인 
 

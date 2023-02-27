@@ -1,7 +1,7 @@
-# maven dependency 추가
+## 1. Maven Dependency 추가
 > 아래 test class 작성 후 필요한 dependency 
 
-# Test Class 작성
+## 2. Test Class 작성
 ```java
 package ***;
 
@@ -90,3 +90,6 @@ public class junitTest {
 	}
 }
 ```
+
+## 3. 결과
+![image](https://user-images.githubusercontent.com/60438691/221479720-78de7e2d-d499-434e-9598-6ebf38e1fa1d.png)

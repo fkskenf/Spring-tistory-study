@@ -41,11 +41,11 @@
 - controller
 ```java
 @PatchMapping("/catal/meta")
-	public ResponseEntity<?> updateCatalMeta(HttpServletRequest request) throws Exception {
-		HashMap<String, Object> param = RequestUtil.paramToHashMap(request);
-    result result = service.updateCatalMeta(param);
-		return ResponseUtil.response(result);
-	}
+public ResponseEntity<?> updateCatalMeta(HttpServletRequest request) throws Exception {
+	HashMap<String, Object> param = RequestUtil.paramToHashMap(request);
+	result result = service.updateCatalMeta(param);
+	return ResponseUtil.response(result);
+}
 ```
   
 - service parsing
@@ -63,4 +63,13 @@ catch (Exception e){
   result.setResultMsg("data를 Parsing하는 과정에서 오류가 발생했습니다.");
   return result;
 }
+```
+
+또는 
+
+```java
+resultData = (HashMap<String, Object>) result.getResultData();
+
+List<HashMap> dataList = (List<HashMap>) resultData.get(CommCode.DATA);
+HashMap<String,Object> info = dataList.get(0); 
 ```

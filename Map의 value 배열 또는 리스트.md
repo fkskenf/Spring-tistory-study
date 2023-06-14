@@ -67,6 +67,11 @@ catch (Exception e){
 
 또는 
 
+- 통신모듈에서 파싱되어 들어온경우
+```java
+HashMap<String,Object> resultData = EmptyUtil.isEmpty(response.toString()) ? new HashMap<String,Object>() : mapper.readValue(response.toString(), HashMap.class);
+```
+- service parsing
 ```java
 resultData = (HashMap<String, Object>) result.getResultData();
 
